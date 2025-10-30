@@ -84,9 +84,9 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
             // the button is enabled when the user makes a selection
             enabled = textAlamat.isNotEmpty(),
             onClick = {
-                var nama = textNama
+                Nama = textNama
                 jenis=textJK
-                var alamat = textAlamat
+                Alamat = textAlamat
             }
         ) {
             Text(stringResource(R.string.Submit))
@@ -99,11 +99,11 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
                 .width(300.dp)
         ) {
             Column (modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp),){
-                val nama = null
-                Text(text = "Nama   : "+nama, color = Color.White )
+
+                Text(text = "Nama   : "+Nama, color = Color.White )
                 Text(text = "Gender : "+jenis, color = Color.White )
-                val alamat = null
-                Text(text = "Alamat : "+alamat, color = Color.White)
+
+                Text(text = "Alamat : "+Alamat, color = Color.White)
             }
         }
     }

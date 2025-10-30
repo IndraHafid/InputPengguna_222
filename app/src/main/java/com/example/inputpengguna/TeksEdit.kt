@@ -67,6 +67,8 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
                 textAlamat = it
             }
         )
-
+        HorizontalDivider(
+            ),
+        )
     }
 }

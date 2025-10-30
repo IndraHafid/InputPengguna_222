@@ -19,6 +19,8 @@ fun FormDataDIri(modifier: Modifier = Modifier)
     var Alamat by remember {mutableStateOf(value="")}
     var jenis by remember {mutableStateOf(value="")}
 
+    val gender: List<String> =listOf("Laki-laki", "Perempuan")
+
 
 
 }

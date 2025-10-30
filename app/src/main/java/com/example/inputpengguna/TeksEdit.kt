@@ -36,5 +36,8 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
             modifier = Modifier.width(250.dp)
         )
 
+        Spacer(modifier = Modifier.height(20.dp))
+
+
     }
 }

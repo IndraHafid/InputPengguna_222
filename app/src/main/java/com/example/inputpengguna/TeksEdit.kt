@@ -62,7 +62,9 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
             value = textAlamat,
             singleLine = true,
             modifier = Modifier.width(width = 250.dp),
-            label = {Text(text = "Alamat Lengkap")}
+            label = {Text(text = "Alamat Lengkap")},
+            onValueChange = {
+                textAlamat = it
             }
         )
 

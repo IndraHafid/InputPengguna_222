@@ -8,19 +8,21 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.input.TextFieldValue
 
-@composable
-fun FormDataDIri(modifier: Modifier = Modifier)
-{
-    var textNama by remember {mutableStateOf(value="")}
-    var textAlamat by remember {mutableStateOf(value="")}
-    var textJK by remember {mutableStateOf(value="")}
+@Composable
+fun FormDataDIri(modifier: Modifier = Modifier) {
+    var textNama by remember { mutableStateOf(value = "") }
+    var textAlamat by remember { mutableStateOf(value = "") }
+    var textJK by remember { mutableStateOf(value = "") }
 
-    var Nama by remember {mutableStateOf(value="")}
-    var Alamat by remember {mutableStateOf(value="")}
-    var jenis by remember {mutableStateOf(value="")}
+    var Nama by remember { mutableStateOf(value = "") }
+    var Alamat by remember { mutableStateOf(value = "") }
+    var jenis by remember { mutableStateOf(value = "") }
 
-    val gender: List<String> =listOf("Laki-laki", "Perempuan")
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
 
+    Column(
+        modifier = Modifier.padding(top = 50.dp),
 
-
+    )
+    }
 }

@@ -1,2 +1,2 @@
 ss
-<img width="894" height="788" alt="image" src="https://github.com/user-attachments/assets/72f58163-aa0c-4bd1-8360-3267913e9886" />
+<img width="1080" height="2160" alt="Screenshot_20251030_130613" src="https://github.com/user-attachments/assets/f74a52b5-6c55-45b6-99ac-8961137b4056" />

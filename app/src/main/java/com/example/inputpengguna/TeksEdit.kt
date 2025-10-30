@@ -7,6 +7,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 
 @Composable
@@ -81,12 +84,12 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
             // the button is enabled when the user makes a selection
             enabled = textAlamat.isNotEmpty(),
             onClick = {
-                nama=textNama
+                var nama = textNama
                 jenis=textJK
-                alamat=textAlamat
+                var alamat = textAlamat
             }
         ) {
-            Text(stringResource(R.string.submit))
+            Text(stringResource(R.string.Submit))
         }
         ElevatedCard (
             elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
@@ -96,8 +99,10 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
                 .width(300.dp)
         ) {
             Column (modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp),){
+                val nama = null
                 Text(text = "Nama   : "+nama, color = Color.White )
                 Text(text = "Gender : "+jenis, color = Color.White )
+                val alamat = null
                 Text(text = "Alamat : "+alamat, color = Color.White)
             }
         }

@@ -30,7 +30,10 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
         OutlinedTextField(
             value = textNama,
             onValueChange = { textNama = it },
-
+            label = { Text(text = "Nama Lengkap") },
+            singleLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(250.dp)
         )
 
     }

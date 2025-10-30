@@ -38,6 +38,11 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(20.dp))
 
+        Row {
+            gender.forEach { item ->
 
+                }
+            }
+        }
     }
 }

@@ -40,8 +40,14 @@ fun FormDataDIri(modifier: Modifier = Modifier) {
 
         Row {
             gender.forEach { item ->
-
-                }
+                Row(
+                    modifier = Modifier
+                        .selectable(
+                            selected = (textJK == item),
+                            onClick = { textJK = item }
+                        )
+                        .padding(horizontal = 8.dp)
+                )
             }
         }
     }

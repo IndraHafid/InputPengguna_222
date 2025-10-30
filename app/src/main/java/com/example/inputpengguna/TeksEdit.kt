@@ -11,5 +11,14 @@ import androidx.compose.ui.text.input.TextFieldValue
 @composable
 fun FormDataDIri(modifier: Modifier = Modifier)
 {
+    var textNama by remember {mutableStateOf(value="")}
+    var textAlamat by remember {mutableStateOf(value="")}
+    var textJK by remember {mutableStateOf(value="")}
+
+    var Nama by remember {mutableStateOf(value="")}
+    var Alamat by remember {mutableStateOf(value="")}
+    var jenis by remember {mutableStateOf(value="")}
+
+
 
 }
